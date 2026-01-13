@@ -19,7 +19,9 @@ const components = {
     'Sterling Wolf',
     'Sting Unicorn',
     'Sword Dran',
-    'Wizard Rod',
+    'Wizard Wand',
+    'Soar Phoenix (Blue)',
+    'Yell Kong'
   ],
   ratchets: [
     '1-60',
@@ -31,6 +33,7 @@ const components = {
     '4-70',
     '4-80',
     '5-60',
+    '5-80',
     '7-60',
     '9-60',
   ],
@@ -50,6 +53,8 @@ const components = {
     'Gear Point',
     'Flat',
     'Rush',
+    'Hex',
+    'Gear Ball'
   ],
 };
 
