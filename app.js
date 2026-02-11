@@ -110,9 +110,6 @@ function createBeyblade(restrictions) {
       return createBeyblade(restrictions.join(' '));
     }
   }
-  // components.blades.splice(randomBlade.index, 1);
-  // components.ratchets.splice(randomRatchet.index, 1);
-  // components.bits.splice(randomBit.index, 1);
   return theBlade;
 }
 
@@ -141,7 +138,7 @@ function createPairing() {
 
 console.log(createPairing());
 
-// const h1 = document.querySelector('h1');
-// h1.textContent = createPairing();
+const h1 = document.querySelector('h1');
+h1.textContent = createPairing();
 
 // Look into sets
