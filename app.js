@@ -1,85 +1,11 @@
-const components = {
-  blades: [
-    { name: 'ArrowWizard', quantity: 1 },
-    { name: 'BeatTyranno', quantity: 1 },
-    { name: 'BusterDran', quantity: 2 },
-    { name: 'ClawLeon', quantity: 2 },
-    { name: 'CobaltDragoon', quantity: 1 },
-    { name: 'CowlSphinx', quantity: 1 },
-    { name: 'CrestLeon', quantity: 1 },
-    { name: 'HammerIncendio', quantity: 1 },
-    { name: 'HelmKnight', quantity: 1 },
-    { name: 'HoverWyvern', quantity: 1 },
-    { name: 'ImpactDrake', quantity: 1 },
-    { name: 'KeelShark', quantity: 1 },
-    { name: 'KnifeShinobi', quantity: 1 },
-    { name: 'LanceKnight', quantity: 1 },
-    { name: 'RoarTyranno', quantity: 2 },
-    { name: 'SaberSamurai', quantity: 1 },
-    { name: 'SavageBear', quantity: 1 },
-    { name: 'ScytheIncendio', quantity: 2 },
-    { name: 'ShadowShinobi', quantity: 1 },
-    { name: 'SterlingWolf', quantity: 1 },
-    { name: 'StingUnicorn', quantity: 1 },
-    { name: 'SwordDran', quantity: 1 },
-    { name: 'WizardWand', quantity: 2 },
-    { name: 'YellKong', quantity: 1 },
-    { name: 'GolemRock', quantity: 1 },
-    { name: 'ObsidianShell', quantity: 1 },
-    { name: 'SoarPhoenix(Blue)', quantity: 1 },
-    { name: 'SoarPhoenix(Red)', quantity: 1 },
-  ],
-
-  ratchets: [
-    { name: '1-60', quantity: 2 },
-    { name: '1-80', quantity: 2 },
-    { name: '2-60', quantity: 1 },
-    { name: '2-70', quantity: 1 },
-    { name: '3-60', quantity: 2 },
-    { name: '3-70', quantity: 1 },
-    { name: '3-80', quantity: 2 },
-    { name: '3-85', quantity: 2 },
-    { name: '4-60', quantity: 2 },
-    { name: '4-70', quantity: 1 },
-    { name: '4-80', quantity: 2 },
-    { name: '5-60', quantity: 2 },
-    { name: '5-70', quantity: 2 },
-    { name: '5-80', quantity: 1 },
-    { name: '7-60', quantity: 1 },
-    { name: '9-60', quantity: 2 },
-  ],
-
-  bits: [
-    { name: 'Accelerate', quantity: 2 },
-    { name: 'Ball', quantity: 2 },
-    { name: 'Flat', quantity: 2 },
-    { name: 'Needle', quantity: 2 },
-    { name: 'Spike', quantity: 1 },
-    { name: 'Quake', quantity: 2 },
-    { name: 'Point', quantity: 2 },
-    { name: 'Cyclone', quantity: 1 },
-    { name: 'Rush', quantity: 2 },
-    { name: 'Hex', quantity: 2 },
-    { name: 'Level', quantity: 1 },
-    { name: 'Dot', quantity: 1 },
-    { name: 'DiskBall', quantity: 1 },
-    { name: 'HighNeedle', quantity: 2 },
-    { name: 'GearBall', quantity: 1 },
-    { name: 'UnderNeedle', quantity: 1 },
-    { name: 'FreeBall', quantity: 1 },
-    { name: 'GearFlat', quantity: 2 },
-    { name: 'GearNeedle', quantity: 1 },
-    { name: 'GearPoint', quantity: 1 },
-    { name: 'GearRush', quantity: 1 },
-    { name: 'LowRush', quantity: 1 },
-  ],
-};
+import data from './beybladeArray.json' with { type: 'json' };
+const components = data;
 
 function randomIndex(piece) {
   const length = components[piece].length;
   const index = Math.floor(Math.random() * length);
   // pick a random piece
-  const item =  components[piece][index]
+  const item = components[piece][index];
   // check if it is available
   if (item.quantity) {
     item.quantity--;
