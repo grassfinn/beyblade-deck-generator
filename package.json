@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "dependencies": {
+    "read-excel-file": "^7.0.2"
+  }
+}
