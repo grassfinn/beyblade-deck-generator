@@ -66,11 +66,10 @@
     { "name": "Dot", "quantity": 1 },
     { "name": "High Taper", "quantity": 1 },
     { "name": "Orb", "quantity": 1 },
-    { "name": "Unite", "quantity": 1 },
+    { "name": "Unite", "quantity": 2 },
     { "name": "Wedge", "quantity": 1 },
     { "name": "Vortex", "quantity": 1 },
     { "name": "Trans Point", "quantity": 1 },
-    { "name": "Union", "quantity": 1 },
     { "name": "Wall Ball", "quantity": 1 }
   ],
   "ratchets": [

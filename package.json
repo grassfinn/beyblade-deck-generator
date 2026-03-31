@@ -1,5 +1,8 @@
 {
   "type": "module",
+  "scripts": {
+    "init": "node ./excel.js"
+  },
   "dependencies": {
     "read-excel-file": "^7.0.2"
   }
